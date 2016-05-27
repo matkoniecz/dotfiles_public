@@ -187,3 +187,4 @@
 [core]
 	quotepath = false #properly display UTF filenames
 	editor = /opt/sublime_text/sublime_text --wait
+	excludesfile = ~/.gitignore_global
