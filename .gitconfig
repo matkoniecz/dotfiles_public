@@ -23,8 +23,8 @@
 	changed = yellow bold
 	untracked = red bold
 [alias]
-   a = add
-	aa = add -u .
+   a = add 			#adding  --no-ignore-removal is causing problems: 'g a' adds then ALL modified files 
+	aa = add -u .	#adding  --no-ignore-removal is causing problems: 'g a' adds then ALL modified files 
    aaa = add --all
 	ai = add -i
 	#############
