@@ -43,6 +43,13 @@
 	ba = branch -a #option -a shows both local and remote branches
 	bd = branch -d
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
+	
+
+	#http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+	
+	bl = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+
+	recent = "!r() { cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:bold yellow)%(refname:short)|%(color:dim white)%(subject)|%(color:dim white)%(authorname)%(color:reset)|%(color:dim green)%(committerdate:relative)' | sed \"s/m${cur}|/m* ${cur}|/\" | column -ts'|'; }; r"
 	#############
 	c = commit -m
 	caa = commit -a
