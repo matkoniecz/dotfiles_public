@@ -46,7 +46,7 @@
 	
 
 	#http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
-	
+
 	bl = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 	recent = "!r() { cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:bold yellow)%(refname:short)|%(color:dim white)%(subject)|%(color:dim white)%(authorname)%(color:reset)|%(color:dim green)%(committerdate:relative)' | sed \"s/m${cur}|/m* ${cur}|/\" | column -ts'|'; }; r"
@@ -88,6 +88,9 @@
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
 	ls = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s" #http://stackoverflow.com/a/1838938/4130619
 	ls = log --oneline
+
+	#http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
+	tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'
 	#############
 	#ls = ls-files
 	#lsf = "!git ls-files | grep -i"
