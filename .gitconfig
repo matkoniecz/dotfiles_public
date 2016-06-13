@@ -26,11 +26,14 @@
    a = add 			#adding  --no-ignore-removal is causing problems: 'g a' adds then ALL modified files 
 	aa = add -u .	#adding  --no-ignore-removal is causing problems: 'g a' adds then ALL modified files 
    aaa = add --all
-	ai = add -i
+	ai = add -p
+	ap = add -p
 	#############
 	#ap = apply
 	#as = apply --stat
 	#ac = apply --check
+	#############
+	rv = revert
 	#############
 	#ama = am --abort
 	#amr = am --resolved
