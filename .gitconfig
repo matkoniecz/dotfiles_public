@@ -29,15 +29,7 @@
 	ai = add -p
 	ap = add -p
 	#############
-	#ap = apply
-	#as = apply --stat
-	#ac = apply --check
-	#############
 	rv = revert
-	#############
-	#ama = am --abort
-	#amr = am --resolved
-	#ams = am --skip
 	#############
 	b = branch
 	ba = branch -a #option -a shows both local and remote branches
@@ -97,7 +89,7 @@
 	#############
 	m = merge
 	mum = "!git fetch upstream; git checkout master; git merge upstream/master; git push" 
-	#ma = merge --abort
+	ma = merge --abort
 	#mc = merge --continue
 	#ms = merge --skip
 	#############
@@ -143,15 +135,15 @@
 	#remh = reset --mixed HEAD
 	#resh = reset --soft HEAD
 	#############
-	#r = remote
-	#ra = remote add
-	#rr = remote rm
-	#rv = remote -v
-	#rp = remote prune
-	#rs = remote show
-	#rao = remote add origin
-	rso = remote show origin
-	#rpo = remote prune origin
+	r = remote
+	ra = remote add
+	rr = remote rm
+	rv = remote -v
+	rp = remote prune
+	rs = remote show
+	rao = remote add origin
+	so = remote show origin
+	rpo = remote prune origin
 	#############
 	sf = status
 	s = status -s -b
@@ -165,10 +157,6 @@
 	#sw = stash show
 	#############
 	t = for-each-ref --format '%(refname) %09 %(taggerdate) %(subject) %(taggeremail)' refs/tags  --sort=taggerdate
-	#############
-	#w = show
-	#wp = show -p
-	#wr = show -p --no-color
 	#############
 	#assume = update-index --assume-unchanged
 	#unassume = update-index --no-assume-unchanged
@@ -189,6 +177,32 @@
 	#human = name-rev --name-only --refs=refs/heads/*
 	#serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	#snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+	#############
+	#Shows one or more objects (blobs, trees, tags and commits).
+  #
+  #For commits it shows the log message and textual diff. It also presents the merge commit in a special format as produced by git diff-tree --cc.
+  #
+  #For tags, it shows the tag message and the referenced objects.
+  #
+  #For trees, it shows the names (equivalent to git ls-tree with --name-only).
+  #
+  #For plain blobs, it shows the plain contents.
+  #
+  #The command takes options applicable to the git diff-tree command to control how the changes the commit introduces are shown.
+  #
+  #w = show
+	#wp = show -p
+	#wr = show -p --no-color
+	#############
+	#git-apply - Apply a patch to files and/or to the index
+	#ap = apply
+	#as = apply --stat
+	#ac = apply --check
+	#############
+	#git-am - Apply a series of patches from a mailbox
+	#ama = am --abort
+	#amr = am --resolved
+	#ams = am --skip
 [diff]
 	tool = meld
 [difftool]
