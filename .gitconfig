@@ -1,5 +1,7 @@
-#based on (problems) https://gist.github.com/pksunkara/988716
-#most of what I changed was copied from stackoverflow, in some cases sources are noted in comments
+# Based on (probably) https://gist.github.com/pksunkara/988716
+# Other sources should be attrinuted in comments.
+
+# Used with git 2.9
 
 [user]
 	name = Mateusz Konieczny
