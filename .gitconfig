@@ -7,7 +7,7 @@
 	name = Mateusz Konieczny
 	email = matkoniecz@gmail.com
 [credential "https://github.com"]
-	username = mkoniecz
+	username = matkoniecz
 [color]
 	ui = auto
 [color "branch"]
