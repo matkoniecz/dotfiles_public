@@ -140,7 +140,7 @@
 	r = remote
 	ra = remote add
 	rr = remote rm
-	rv = remote -v
+	#rv = remote -v #conflicts with revert
 	rp = remote prune
 	rs = remote show
 	rao = remote add origin
