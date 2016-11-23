@@ -54,10 +54,10 @@
 	cp = cherry-pick
 	#############
 	d = diff --find-renames
-	dc = diff --cached --find-renames
+	dc = diff --find-renames --cached
 	dl = difftool
 	dlc = difftool --cached
-	#dp = diff --patience
+	dp = diff --find-renames --patience
 	#############
 	f = fetch --prune
 	fo = fetch origin --prune
