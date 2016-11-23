@@ -51,8 +51,6 @@
 	#cam = commit -am
 	ca = commit --amend
 	caa = commit --amend --no-edit
-	#cad = commit -a --amend
-	#ced = commit --allow-empty --amend
 	cp = cherry-pick
 	#############
 	d = diff --find-renames
