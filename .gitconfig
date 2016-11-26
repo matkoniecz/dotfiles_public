@@ -201,6 +201,10 @@
 	#ama = am --abort
 	#amr = am --resolved
 	#ams = am --skip
+	ru = "!rubocop -DES"
+	rua = "!rubocop -DESa ; git aa ; git dc"
+	rur = "!rubocop -DESR"
+	rura = "!rubocop -DESRa ; git aa ; git dc"
 [diff]
 	tool = meld
 [difftool]
