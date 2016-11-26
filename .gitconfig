@@ -46,9 +46,7 @@
 	bl = "!r() { cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:bold yellow)%(refname:short)|%(color:dim white)%(subject)|%(color:dim white)%(authorname)%(color:reset)|%(color:dim green)%(committerdate:relative)' | sed \"s/m${cur}|/m* ${cur}|/\" | column -ts'|'; }; r"
 	#############
 	c = commit -m
-	caa = commit -a
-	#cem = commit --allow-empty -m
-	#cam = commit -am
+	#cal = commit --all -m #Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
 	ca = commit --amend
 	caa = commit --amend --no-edit
 	cp = cherry-pick
