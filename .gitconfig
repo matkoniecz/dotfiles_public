@@ -205,6 +205,7 @@
 	rua = "!rubocop -DESa ; git aa ; git dc"
 	rur = "!rubocop -DESR"
 	rura = "!rubocop -DESRa ; git aa ; git dc"
+	ruta = "!rubocop --auto-gen-config ; git aa ; git dc"
 [diff]
 	tool = meld
 [difftool]
