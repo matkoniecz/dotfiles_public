@@ -49,6 +49,8 @@
 	#cal = commit --all -m #Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
 	ca = commit --amend
 	caa = commit --amend --no-edit
+	ops = commit --amend --no-edit # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
+	oops = commit --amend --no-edit # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
 	cp = cherry-pick
 	#############
 	d = diff --find-renames
@@ -199,4 +201,4 @@
 	editor = /opt/sublime_text/sublime_text --wait
 	excludesfile = ~/.gitignore_global
 [status]
-	showUntrackedFiles = all
+	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
