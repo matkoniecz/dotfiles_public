@@ -200,5 +200,6 @@
 	quotepath = false #properly display UTF filenames
 	editor = /opt/sublime_text/sublime_text --wait
 	excludesfile = ~/.gitignore_global
+	pager = less -x1,4 #sets tab width as 3 spaces - from http://stackoverflow.com/questions/10581093/setting-tabwidth-to-4-in-git-show-git-diff
 [status]
 	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
