@@ -289,5 +289,44 @@
 	editor = /opt/sublime_text/sublime_text --wait
 	excludesfile = ~/.gitignore_global
 	pager = less -x1,4 #sets tab width as 3 spaces - from http://stackoverflow.com/questions/10581093/setting-tabwidth-to-4-in-git-show-git-diff
+
+
+# core.whitespace
+# 
+#     A comma separated list of common whitespace problems to notice. git
+#     diff will use color.diff.whitespace to highlight them, and git
+#     apply --whitespace=error will consider them as errors. You can
+#     prefix - to disable any of them (e.g. -trailing-space):
+#
+#         blank-at-eol treats trailing whitespaces at the end of the line
+#         as an error (enabled by default).
+#
+#         space-before-tab treats a space character that appears
+#         immediately before a tab character in the initial indent part
+#         of the line as an error (enabled by default).
+#
+#         indent-with-non-tab treats a line that is indented with space
+#         characters instead of the equivalent tabs as an error (not
+#         enabled by default).
+#
+#         tab-in-indent treats a tab character in the initial indent part
+#         of the line as an error (not enabled by default).
+#
+#         blank-at-eof treats blank lines added at the end of file as an
+#         error (enabled by default).
+#
+#         trailing-space is a short-hand to cover both blank-at-eol and
+#         blank-at-eof.
+#
+#         cr-at-eol treats a carriage-return at the end of line as part
+#         of the line terminator, i.e. with it, trailing-space does not
+#         trigger if the character before such a carriage-return is not a
+#         whitespace (not enabled by default).
+#
+#         tabwidth=<n> tells how many character positions a tab occupies;
+#         this is relevant for indent-with-non-tab and when Git fixes
+#         tab-in-indent errors. The default tab width is 8. Allowed
+#         values are 1 to 63.
+	whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
 [status]
 	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
