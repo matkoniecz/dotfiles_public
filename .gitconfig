@@ -14,6 +14,26 @@
 	current = yellow bold
 	local = green bold
 	remote = cyan bold
+
+# from https://gist.github.com/rab/4067067
+# color.branch.<slot>
+#     Use customized color for branch coloration.  <slot> is one of current (the current branch), local
+#     (a local branch), remote (a remote-tracking branch in refs/remotes/), plain (other refs).
+
+#     The value for these configuration variables is a list of colors (at most two) and attributes (at
+#     most one), separated by spaces. The colors accepted are:
+#       normal, black, red, green, yellow, blue, magenta, cyan and white;
+#     the attributes are:
+#       bold, dim, ul, blink and reverse.
+#
+#     The first color given is the foreground; the second is the background.
+#     The position of the attribute, if any, doesn't matter.
+[color "decorate"]
+	branch = yellow
+	remoteBranch = yellow
+	tag = yellow
+	stash = yellow
+	HEAD = yellow
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
@@ -75,9 +95,10 @@
 	orphan = "!gitk --all --date-order `git reflog | cut -c1-7`"
 	#############
 	#from https://coderwall.com/p/euwpig/a-better-git-log
-	l  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
-	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
-	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
+	# see [color "decorate"] section for configuration of (auto) parameter for position info
+	l  = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
+	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
+	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
 
