@@ -75,9 +75,9 @@
 	orphan = "!gitk --all --date-order `git reflog | cut -c1-7`"
 	#############
 	#from https://coderwall.com/p/euwpig/a-better-git-log
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
-	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
+	l  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
+	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
 
