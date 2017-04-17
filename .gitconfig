@@ -168,6 +168,7 @@
 	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
+	lg = "!gitk&"
 
 	#http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
 	tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'
