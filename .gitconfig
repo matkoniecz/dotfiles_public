@@ -8,6 +8,8 @@
 	email = matkoniecz@gmail.com
 [credential "https://github.com"]
 	username = matkoniecz
+[rerere]
+	enabled = true
 [color]
 	ui = auto
 	branch = auto
