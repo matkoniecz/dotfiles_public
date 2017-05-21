@@ -144,8 +144,8 @@
 	#############
 	d = diff --find-renames
 	dc = diff --find-renames --cached
-	dl = difftool
-	dlc = difftool --cached
+	dl = difftool --dir-diff
+	dlc = difftool --cached --dir-diff
 	dp = diff --find-renames --patience
 	#############
 	f = fetch --prune
