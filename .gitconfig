@@ -184,6 +184,7 @@
 	#mc = merge --continue
 	#ms = merge --skip
 	#############
+	co = "!echo 'o is my alias for checkout command'"
 	o = checkout
 	om = checkout master
 	ob = checkout -b
