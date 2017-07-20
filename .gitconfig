@@ -113,6 +113,10 @@
 	changed = yellow bold
 	untracked = red bold
 
+[log]
+#found in https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean
+	graphColors = "#f1c40f",red,green,yellow,magenta,cyan,white
+
 [alias]
 	a = add
 	aa = add -u .
