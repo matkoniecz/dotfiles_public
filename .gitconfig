@@ -243,6 +243,10 @@
 	#############
 	sf = status
 	s = status -s -b
+
+	#from https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-get-a-list-of-conflicted-files
+	conflict = diff --name-only --diff-filter=U
+	conflicts = diff --name-only --diff-filter=U
 	#############
 	#sa = stash apply
 	#sc = stash clear
