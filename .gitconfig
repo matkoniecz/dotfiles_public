@@ -164,7 +164,6 @@
 	#############
 	i = "!git init; git commit --allow-empty -m \"empty initial commit\""
 	#############
-	i = "!git init; git commit --allow-empty -m \"empty initial commit\""
 	orphan = "!gitk --all --date-order `git reflog | cut -c1-7`"
 	#############
 	#from https://coderwall.com/p/euwpig/a-better-git-log
