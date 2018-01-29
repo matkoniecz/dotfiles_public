@@ -115,3 +115,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+. /home/mateusz/Documents/install_moje/config_bash/my_addditions_to_bashrc.sh
+
+PATH="/home/mateusz/.gem/ruby/2.3.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.4.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.5.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.6.0/bin:$PATH"
