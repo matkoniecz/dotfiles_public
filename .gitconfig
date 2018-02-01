@@ -118,6 +118,11 @@
 	graphColors = "#f1c40f",red,green,yellow,magenta,cyan,white
 
 [alias]
+	# List aliases
+	# from https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig
+	aliases = config --get-regexp alias
+
+	#############
 	a = add
 	aa = add -u .
 	aaa = add --all
