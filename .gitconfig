@@ -136,6 +136,11 @@
 	bd = branch -d
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
 	
+	# Remove branches that have already been merged with master
+	# a.k.a. ‘delete merged’
+	# from https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig#
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
 
 	#http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
 
@@ -153,6 +158,8 @@
 	#############
 	d = diff --find-renames
 	dc = diff --find-renames --cached
+	dw = diff --find-renames --word-diff=color
+	dcw = diff --find-renames --cached --word-diff=color
 	dl = difftool --dir-diff
 	dlc = difftool --cached --dir-diff
 	dp = diff --find-renames --patience
@@ -168,6 +175,7 @@
 	#g = grep -p
 	#############
 	i = "!git init; git commit --allow-empty -m \"empty initial commit\""
+	import = "!git add --all; git commit -m \"initial import of files after creating git repository\""
 	#############
 	orphan = "!gitk --all --date-order `git reflog | cut -c1-7`"
 	#############
@@ -282,6 +290,9 @@
 	#human = name-rev --name-only --refs=refs/heads/*
 	#serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	#snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+	# from https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules/14365374#14365374
+	clone-base = clone
+	clone = clone-base --recurse-submodules
 	#############
 	#git-apply - Apply a patch to files and/or to the index
 	#ap = apply
@@ -295,6 +306,17 @@
 	ruta = "!rubocop --auto-gen-config ; git aa ; git dc"
 [diff]
 	tool = meld
+
+	# Use better, descriptive initials (c, i, w) instead of a/b.
+	# from https://gist.github.com/tdd/470582
+	# https://stackoverflow.com/questions/28017249/what-does-diff-mnemonicprefix-do
+	# (i)ndex, (w)ork tree, (c)ommit, (o)bject
+	mnemonicPrefix = true
+
+	# When using --word-diff, assume --word-diff-regex=.
+	# from https://gist.github.com/tdd/470582
+	wordRegex = .
+
 [difftool]
 	prompt = false
 [push]
@@ -347,3 +369,8 @@
 	whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
 [status]
 	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
+[fetch]
+	# https://stackoverflow.com/questions/6127328/how-can-i-delete-all-git-branches-which-have-been-merged/24558813#24558813
+	# comment:
+	# git config --global --add fetch.prune true to prune automatically on fetch or pull. – T3rm1 Dec 18 '15 at 14:51
+	prune = true
