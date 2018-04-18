@@ -24,7 +24,7 @@
 	rv = revert
 	#############
 	b = branch
-	ba = branch -a #option -a shows both local and remote branches
+	ba = branch --all #option -a shows both local and remote branches
 	bd = branch -d
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
 	
