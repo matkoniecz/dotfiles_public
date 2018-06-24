@@ -369,6 +369,7 @@
 #         tab-in-indent errors. The default tab width is 8. Allowed
 #         values are 1 to 63.
 	whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
+	attributesfile = ~/.gitattributes
 [status]
 	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
 [fetch]
