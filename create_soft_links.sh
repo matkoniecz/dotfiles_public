@@ -9,13 +9,13 @@ trap 'err_report $LINENO' ERR
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" #from http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 
-if [ -f ~/.gitignore_global ]; then
+if [ -e ~/.gitignore_global ]; then
   rm ~/.gitignore_global
 fi
-if [ -f ~/.gitconfig ]; then
+if [ -e ~/.gitconfig ]; then
   rm ~/.gitconfig
 fi
-if [ -f ~/.gitattributes ]; then
+if [ -e ~/.gitattributes ]; then
   rm ~/.gitattributes
 fi
 
