@@ -19,6 +19,6 @@ if [ -e ~/.gitattributes ]; then
   rm ~/.gitattributes
 fi
 
-ln -s $DIR/.gitignore_global ~/.gitignore_global
-ln -s $DIR/.gitconfig ~/.gitconfig
-ln -s $DIR/.gitattributes ~/.gitattributes
+ln -s "$DIR/.gitignore_global" ~/.gitignore_global
+ln -s "$DIR/.gitconfig" ~/.gitconfig
+ln -s "$DIR/.gitattributes" ~/.gitattributes
