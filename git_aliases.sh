@@ -1,6 +1,7 @@
 alias g='git'
 
 alias clone='git clone'
+alias remote='git remote'
 
 alias a='git a'
 alias aa='git aa'
