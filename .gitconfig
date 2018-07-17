@@ -56,9 +56,10 @@
 	dlc = difftool --cached --dir-diff
 	dp = diff --find-renames --patience
 	#############
-	f = fetch --prune
-	fo = fetch origin --prune
-	fu = fetch upstream --prune
+	# --all --prune is to download branch deletions ( https://stackoverflow.com/a/2003515/4130619 - see the end of the asnwer)
+	f = fetch --all --prune
+	fo = fetch origin --all --prune
+	fu = fetch upstream --all --prune
 	#############
 	#fp = format-patch
 	#############
