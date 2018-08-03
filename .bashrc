@@ -117,8 +117,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. /home/mateusz/Documents/install_moje/dotfiles_except_crontab/my_addditions_to_bashrc.sh
-. /home/mateusz/Documents/install_moje/dotfiles_except_crontab/git_aliases.sh
+DIR="/home/mateusz/Documents/install_moje/dotfiles_except_crontab"
+. "$DIR/my_addditions_to_bashrc.sh"
+. "$DIR/git_aliases.sh"
+
+# enable git commands provided as git files
+export PATH="$DIR/git_commands_as_script_files:$PATH"
 
 PATH="/home/mateusz/.gem/ruby/2.3.0/bin:$PATH"
 PATH="/home/mateusz/Install:$PATH"
