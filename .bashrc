@@ -117,8 +117,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. /home/mateusz/Documents/install_moje/dotfiles_except_git_config_and_crontab/my_addditions_to_bashrc.sh
-. /home/mateusz/Documents/install_moje/dotfiles_except_git_config_and_crontab/git_aliases.sh
+. /home/mateusz/Documents/install_moje/dotfiles_except_crontab/my_addditions_to_bashrc.sh
+. /home/mateusz/Documents/install_moje/dotfiles_except_crontab/git_aliases.sh
 
 PATH="/home/mateusz/.gem/ruby/2.3.0/bin:$PATH"
 PATH="/home/mateusz/Install:$PATH"

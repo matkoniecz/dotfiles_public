@@ -7,25 +7,31 @@ err_report() {
 trap 'err_report $LINENO' ERR
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" #from http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
-[ -e ~/.bashrc ] && rm ~/.bashrc
-ln -s $DIR/.bashrc ~/.bashrc
-
-[ -e ~/.config/lxsession/Lubuntu/desktop.conf ] && rm ~/.config/lxsession/Lubuntu/desktop.conf
-ln -s $DIR/desktop.conf ~/.config/lxsession/Lubuntu/desktop.conf
-
-[ -e ~/.config/lxsession/Lubuntu/autostart ] && rm ~/.config/lxsession/Lubuntu/autostart
-ln -s $DIR/autostart ~/.config/lxsession/Lubuntu/autostart
-
-if [ -e ~/.gitignore_global ]; then
-  rm ~/.gitignore_global
+if [ -e "$HOME/.bashrc" ]; then
+  rm "$HOME/.bashrc"
 fi
-if [ -e ~/.gitconfig ]; then
-  rm ~/.gitconfig
+if [ -e "$HOME/.config/lxsession/Lubuntu/desktop.conf" ]; then
+  rm "$HOME/.config/lxsession/Lubuntu/desktop.conf"
 fi
-if [ -e ~/.gitattributes ]; then
-  rm ~/.gitattributes
+if [ -e "$HOME/.config/lxsession/Lubuntu/autostart" ]; then
+  rm "$HOME/.config/lxsession/Lubuntu/autostart"
 fi
 
-ln -s "$DIR/.gitignore_global" ~/.gitignore_global
-ln -s "$DIR/.gitconfig" ~/.gitconfig
-ln -s "$DIR/.gitattributes" ~/.gitattributes
+ln -s "$DIR/.bashrc" "$HOME/.bashrc"
+ln -s "$DIR/desktop.conf" "$HOME/.config/lxsession/Lubuntu/desktop.conf"
+ln -s "$DIR/autostart" "$HOME/.config/lxsession/Lubuntu/autostart"
+
+if [ -e "$HOME/.gitignore_global" ]; then
+  rm "$HOME/.gitignore_global"
+  echo "$HOME/.gitignore_global"
+fi
+if [ -e "$HOME/.gitconfig" ]; then
+  rm "$HOME/.gitconfig"
+fi
+if [ -e "$HOME/.gitattributes" ]; then
+  rm "$HOME/.gitattributes"
+fi
+
+ln -s "$DIR/.gitignore_global" "$HOME/.gitignore_global"
+ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DIR/.gitattributes" "$HOME/.gitattributes"

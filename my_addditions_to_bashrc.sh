@@ -34,4 +34,7 @@ export PATH="/home/mateusz/.local/bin/:$PATH"
 # sometimes /usr/local/bin/ is missing for some ridiculous reason
 export PATH="/usr/local/bin/:$PATH"
 
+# enable git commands provided as git files
+export PATH="/home/mateusz/Documents/install_moje/dotfiles_except_crontab/git_commands_as_script_files:$PATH"
+
 export PYTHONPATH="/home/mateusz/Documents/install_moje/python_packages:$PYTHONPATH"
