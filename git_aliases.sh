@@ -1,7 +1,7 @@
 alias g='git'
 
 # main list below can be regenerated with
-# g aliases | sed "s/ .*//" | sed "s/alias\.//" | grep . | grep -v "^(ps|tree|ls)$" | sort | sed "s/\(.*\)/alias \1='git \1'/"
+# g aliases | sed "s/ .*//" | sed "s/alias\.//" | grep . | egrep -v "^(ps|tree|ls)$" | sort | sed "s/\(.*\)/alias \1='git \1'/"
 # g aliases
 #     list of aliases
 #
@@ -17,7 +17,7 @@ alias g='git'
 # sort
 #     to keep list order stable
 #
-# grep -v "^(ps|tree|ls)$"
+# egrep -v "^(ps|tree|ls)$"
 #     drops unaliased exceptions
 #
 #     now only wanted aliases remain
@@ -74,7 +74,6 @@ alias l='git l'
 alias lf='git lf'
 alias lg='git lg'
 alias ll='git ll'
-alias ls='git ls'
 alias lstd='git lstd'
 alias m='git m'
 alias ma='git ma'
@@ -87,7 +86,6 @@ alias ops='git ops'
 alias orphan='git orphan'
 alias pl='git pl'
 alias plu='git plu'
-alias ps='git ps'
 alias psf='git psf'
 alias pso='git pso'
 alias psu='git psu'
@@ -115,5 +113,4 @@ alias s='git s'
 alias sf='git sf'
 alias so='git so'
 alias t='git t'
-alias tree='git tree'
 alias war='git war'
