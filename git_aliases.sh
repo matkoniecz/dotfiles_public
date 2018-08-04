@@ -1,55 +1,99 @@
 alias g='git'
 
+# main list below can be regenerated with
+# g aliases | sed "s/ .*//" | sed "s/alias\.//" | grep . | grep -v "^(ps|tree|ls)$" | sort | sed "s/\(.*\)/alias \1='git \1'/"
+# g aliases
+#     list of aliases
+#
+# sed "s/ .*//"
+#     drops info of alias target
+#
+# sed "s/alias\.//"
+#     removes alias. prefix
+#
+# grep .
+#     drops empty lines (possible with very long cliased commands displayed in multiple lines)
+#
+# sort
+#     to keep list order stable
+#
+# grep -v "^(ps|tree|ls)$"
+#     drops unaliased exceptions
+#
+#     now only wanted aliases remain
+# sed "s/\(.*\)/alias \1='git \1'/"
+#     expand to wanted format
+
+# not aliased, not covereed by generation
 alias clone='git clone'
 alias remote='git remote'
 alias reflog='git reflog'
 
+# not aliased by rather a separate commands - not covered
+alias nuke='git nuke'
+
+# exception, displaed from generating kept here for documentation
+#alias ls='git ls'
+#alias tree='git tree'
+#alias ps='git ps' conflicts with system ps
+
+#generated aliases
 alias a='git a'
 alias aa='git aa'
 alias aaa='git aaa'
 alias ai='git ai'
+alias aliases='git aliases'
 alias ap='git ap'
-alias rv='git rv'
 alias b='git b'
 alias ba='git ba'
-alias br='git br'
-alias bl2='git bl2'
+alias bd='git bd'
 alias bl='git bl'
+alias bl2='git bl2'
+alias br='git br'
 alias c='git c'
-alias conflict='git conflict'
-alias conflicts='git conflicts'
-alias war='git conflict'
 alias ca='git ca'
 alias caa='git caa'
-alias ops='git ops'
+alias clone='git clone'
+alias clone-base='git clone-base'
+alias co='git co'
+alias conflict='git conflict'
+alias conflicts='git conflicts'
+alias cp='git cp'
 alias d='git d'
 alias dc='git dc'
+alias dcw='git dcw'
 alias dl='git dl'
 alias dlc='git dlc'
+alias dm='git dm'
 alias dp='git dp'
+alias dw='git dw'
 alias f='git f'
-alias fo='git fo'
-alias fu='git fu'
 alias i='git i'
-alias i='git i'
-alias orphan='git orphan'
+alias import='git import'
 alias l='git l'
-alias ll='git ll'
 alias lf='git lf'
-#alias ls='git ls'
-alias lstd='git lstd'
 alias lg='git lg'
-#alias tree='git tree'
+alias ll='git ll'
+alias ls='git ls'
+alias lstd='git lstd'
 alias m='git m'
-alias mum='git mum'
 alias ma='git ma'
+alias mum='git mum'
 alias o='git o'
-alias om='git om'
 alias ob='git ob'
-#alias ps='git ps' conflicts with system ps
-alias psf='git psf'
+alias om='git om'
+alias oops='git oops'
+alias ops='git ops'
+alias orphan='git orphan'
 alias pl='git pl'
 alias plu='git plu'
+alias ps='git ps'
+alias psf='git psf'
+alias pso='git pso'
+alias psu='git psu'
+alias r='git r'
+alias ra='git ra'
+alias rao='git rao'
 alias rb='git rb'
 alias rba='git rba'
 alias rbc='git rbc'
@@ -57,20 +101,19 @@ alias rbi='git rbi'
 alias rbs='git rbs'
 alias re='git re'
 alias reh='git reh'
-alias r='git r'
-alias ra='git ra'
-alias rr='git rr'
 alias rp='git rp'
-alias rs='git rs'
-alias rao='git rao'
-alias so='git so'
 alias rpo='git rpo'
-alias sf='git sf'
-alias s='git s'
-alias t='git t'
+alias rr='git rr'
+alias rs='git rs'
 alias ru='git ru'
 alias rua='git rua'
 alias rur='git rur'
 alias rura='git rura'
 alias ruta='git ruta'
- 
+alias rv='git rv'
+alias s='git s'
+alias sf='git sf'
+alias so='git so'
+alias t='git t'
+alias tree='git tree'
+alias war='git war'
