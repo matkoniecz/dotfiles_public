@@ -28,6 +28,7 @@ alias g='git'
 alias clone='git clone'
 alias remote='git remote'
 alias reflog='git reflog'
+alias merge='git merge'
 
 # not aliased by rather a separate commands - not covered
 alias nuke='git nuke'
