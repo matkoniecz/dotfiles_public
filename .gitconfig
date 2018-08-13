@@ -379,4 +379,4 @@
 [diff "image"]
 	# TODO HACK - should be softlinked
 	# from http://www.akikoskinen.info/image-diffs-with-git/
-	command = ~/Documents/install_moje/my_git_config/compare_images.sh
+	command = ~/Documents/install_moje/dotfiles_except_crontab_and_autostart/compare_images.sh
