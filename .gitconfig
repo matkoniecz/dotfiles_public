@@ -144,8 +144,8 @@
 	so = remote show origin
 	rpo = remote prune origin
 	#############
-	sf = status
-	s = status -s -b
+	s = status --short --branch
+	s-explanation = status shown in short form but still lists branch
 
 	#from https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-get-a-list-of-conflicted-files
 	war = diff --name-only --diff-filter=U
