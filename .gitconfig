@@ -8,6 +8,8 @@
 	email = matkoniecz@gmail.com
 [credential "https://github.com"]
 	username = matkoniecz
+[credential "https://gitlab.com"]
+	username = matkoniecz@gmail.com
 
 [alias]
 	# List aliases
