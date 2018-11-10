@@ -35,3 +35,8 @@ export PATH="/home/mateusz/.local/bin/:$PATH"
 export PATH="/usr/local/bin/:$PATH"
 
 export PYTHONPATH="/home/mateusz/Documents/install_moje/python_packages:$PYTHONPATH"
+
+# go specific path setups
+export GOPATH="/home/mateusz/Documents/install/gopath_target"
+export PATH="/home/mateusz/Documents/install/gopath_target/bin:$PATH"
+export PATH="/usr/lib/go-1.10/bin:$PATH" #needed by backports by gophers - https://github.com/golang/go/wiki/Ubuntu
