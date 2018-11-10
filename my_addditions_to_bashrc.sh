@@ -40,3 +40,9 @@ export PYTHONPATH="/home/mateusz/Documents/install_moje/python_packages:$PYTHONP
 export GOPATH="/home/mateusz/Documents/install/gopath_target"
 export PATH="/home/mateusz/Documents/install/gopath_target/bin:$PATH"
 export PATH="/usr/lib/go-1.10/bin:$PATH" #needed by backports by gophers - https://github.com/golang/go/wiki/Ubuntu
+
+# download aliases
+
+alias d-page='wget -E  -k -p'
+alias d-youtube='youtube-dl -f mp4'
+alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
