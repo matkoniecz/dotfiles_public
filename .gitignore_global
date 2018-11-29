@@ -1,6 +1,9 @@
 # secret files (my idea)
 *.secret
 
+# standard file name used by Google APIs
+credentials.json
+
 #LibreOffice locks
 
 .~lock.*
