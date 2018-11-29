@@ -141,8 +141,9 @@
 	rr = remote rm
 	#rv = remote -v #conflicts with revert
 	rp = remote prune
-	rs = remote show
+	rl = remote --verbose #list remotes with their urls
 	rao = remote add origin
+	rs = remote show
 	so = remote show origin
 	rpo = remote prune origin
 	#############
