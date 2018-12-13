@@ -6,6 +6,8 @@ credentials.json
 
 .byebug_history
 
+# vscode debris settings
+.vscode
 
 
 # Created by https://www.gitignore.io/api/linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode,libreoffice
