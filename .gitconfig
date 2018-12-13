@@ -326,7 +326,9 @@
 [push]
 	default = current
 [credential]
-	helper = cache --timeout=360000
+	# helper = cache --timeout=360000 # stores data in plaintext, problematic password input for multiple repository hosts
+	# see https://askubuntu.com/a/959662/349903 for how it should be installed
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [core]
 	quotepath = false #properly display UTF filenames
 	editor = /opt/sublime_text/sublime_text --wait
