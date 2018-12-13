@@ -4,15 +4,12 @@
 # standard file name used by Google APIs
 credentials.json
 
-#LibreOffice locks
-
-.~lock.*
-
 .byebug_history
 
 
-# Created by https://www.gitignore.io/api/linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode
+
+# Created by https://www.gitignore.io/api/linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode,libreoffice
+# Edit at https://www.gitignore.io/?templates=linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode,libreoffice
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -143,6 +140,10 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
+
+### LibreOffice ###
+# LibreOffice locks
+.~lock.*#
 
 ### Linux ###
 
@@ -658,4 +659,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode
+# End of https://www.gitignore.io/api/linux,rubymine,sublimetext,intellij,windows,pycharm,webstorm,notepadpp,emacs,vim,python,ruby,rust,node,visualstudiocode,libreoffice
