@@ -1,8 +1,9 @@
 # secret files (my idea)
 *.secret
 
-# standard file name used by Google APIs
+# standard file names used by Google APIs
 credentials.json
+token.json
 
 .byebug_history
 
