@@ -46,3 +46,5 @@ export PATH="/usr/lib/go-1.10/bin:$PATH" #needed by backports by gophers - https
 alias d-page='wget -E  -k -p'
 alias d-youtube='youtube-dl -f mp4'
 alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
+
+alias p='python3'
