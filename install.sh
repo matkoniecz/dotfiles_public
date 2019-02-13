@@ -18,13 +18,19 @@ prepare_for_linking() {
 }
 
 prepare_for_linking "$HOME/.bashrc"
-prepare_for_linking "$HOME/.config/lxsession/Lubuntu/desktop.conf"
 prepare_for_linking "$HOME/.gitignore_global"
 prepare_for_linking "$HOME/.gitconfig"
 prepare_for_linking "$HOME/.gitattributes"
 
 ln -s "$DIR/.bashrc" "$HOME/.bashrc"
-ln -s "$DIR/desktop.conf" "$HOME/.config/lxsession/Lubuntu/desktop.conf"
 ln -s "$DIR/.gitignore_global" "$HOME/.gitignore_global"
 ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DIR/.gitattributes" "$HOME/.gitattributes"
+
+if [ "$TESTVAR" = "LXDE-pi" ]; then
+	echo "skipping ~/.config/lxsession/Lubuntu/desktop.conf on raspberry pi"
+	# it seems that it can be skipped
+else
+	prepare_for_linking "$HOME/.config/lxsession/Lubuntu/desktop.conf"
+	ln -s "$DIR/desktop.conf" "$HOME/.config/lxsession/Lubuntu/desktop.conf"
+fi
