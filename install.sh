@@ -27,7 +27,7 @@ ln -s "$DIR/.gitignore_global" "$HOME/.gitignore_global"
 ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DIR/.gitattributes" "$HOME/.gitattributes"
 
-if [ "$TESTVAR" = "LXDE-pi" ]; then
+if [ "$DESKTOP_SESSION" = "LXDE-pi" ]; then
 	echo "skipping ~/.config/lxsession/Lubuntu/desktop.conf on raspberry pi"
 	# it seems that it can be skipped
 else
