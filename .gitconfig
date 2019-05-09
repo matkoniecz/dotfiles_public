@@ -332,7 +332,7 @@
 	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [core]
 	quotepath = false #properly display UTF filenames
-	editor = /opt/sublime_text/sublime_text --wait
+	editor = code --wait
 	excludesfile = ~/.gitignore_global
 	pager = less -x1,4 #sets tab width as 3 spaces - from http://stackoverflow.com/questions/10581093/setting-tabwidth-to-4-in-git-show-git-diff
 
