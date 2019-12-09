@@ -31,6 +31,9 @@ alias mv='mv -i'
 # user install mode in pip puts binaries there
 export PATH="/home/mateusz/.local/bin/:$PATH"
 
+# make telegram command available
+export PATH="/opt/telegram/:$PATH"
+
 # sometimes /usr/local/bin/ is missing for some ridiculous reason
 export PATH="/usr/local/bin/:$PATH"
 
