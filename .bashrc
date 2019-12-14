@@ -124,8 +124,8 @@ DIR="/home/mateusz/Documents/install_moje/dotfiles_except_crontab_and_autostart"
 # enable git commands provided as git files
 export PATH="$DIR/git_commands_as_script_files:$PATH"
 
-#PATH="/home/mateusz/.gem/ruby/2.3.0/bin:$PATH"
 PATH="/home/mateusz/Install:$PATH"
-#PATH="/home/mateusz/.gem/ruby/2.4.0/bin:$PATH"
-PATH="/home/mateusz/.gem/ruby/2.5.0/bin:$PATH"
-#PATH="/home/mateusz/.gem/ruby/2.6.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.5.0/bin:$PATH"
+PATH="/home/mateusz/.gem/ruby/2.6.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.7.0/bin:$PATH"
+#PATH="/home/mateusz/.gem/ruby/2.8.0/bin:$PATH"
