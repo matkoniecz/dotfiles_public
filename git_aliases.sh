@@ -25,6 +25,7 @@ alias g='git'
 #     expand to wanted format
 
 # not aliased, not covereed by generation
+alias tag='git tag'
 alias clone='git clone'
 alias remote='git remote'
 alias reflog='git reflog'
