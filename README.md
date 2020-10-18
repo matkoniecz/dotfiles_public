@@ -7,8 +7,12 @@ echo "alias g='git'" >> ~/.bashrc
 bash create_soft_links.sh
 exec bash # http://stackoverflow.com/questions/2518127/how-do-i-reload-bashrc-without-logging-out-and-back-in
 g ll
+```
 
-# following is typically useful on disposable VMs
+# run to setup this config also for root
+typically useful on disposable VMs
+
+```
 sudo su
 echo "alias g='git'" >> ~/.bashrc
 exec bash
