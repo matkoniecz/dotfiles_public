@@ -11,14 +11,12 @@ def prepare_for_linking(filepath)
     raise "file #{filepath} exists and is not a symbolic link, was not removed to prevent accidental damage"
 end
 
-prepare_for_linking("#{ENV['HOME']}/.bashrc")
-`ln -s "#{__dir__}/.bashrc" "$HOME/.bashrc"`
+def link(target, link_location)
+    prepare_for_linking(link_location)
+    `ln -s "#{target}" "#{link_location}"`
+end
 
-prepare_for_linking("#{ENV['HOME']}/.gitignore_global")
-`ln -s "#{__dir__}/.gitignore_global" "$HOME/.gitignore_global"`
-
-prepare_for_linking("#{ENV['HOME']}/.gitconfig")
-`ln -s "#{__dir__}/.gitconfig" "$HOME/.gitconfig"`
-
-prepare_for_linking("#{ENV['HOME']}/.gitattributes")
-`ln -s "#{__dir__}/.gitattributes" "$HOME/.gitattributes"`
+link("#{__dir__}/.bashrc", "$HOME/.bashrc")
+link("#{__dir__}/.gitignore_global", "$HOME/.gitignore_global")
+link("#{__dir__}/.gitconfig", "$HOME/.gitconfig")
+link("#{__dir__}/.gitattributes", "$HOME/.gitattributes")
