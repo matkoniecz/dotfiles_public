@@ -22,11 +22,3 @@ prepare_for_linking("#{ENV['HOME']}/.gitconfig")
 
 prepare_for_linking("#{ENV['HOME']}/.gitattributes")
 `ln -s "#{__dir__}/.gitattributes" "$HOME/.gitattributes"`
-
-if ENV['DESKTOP_SESSION'] == "LXDE-pi"
-	puts "skipping ~/.config/lxsession/Lubuntu/desktop.conf on raspberry pi"
-	# it seems that it can be skipped
-else
-	prepare_for_linking("#{ENV['HOME']}/.config/lxsession/Lubuntu/desktop.conf")
-	`ln -s "#{__dir__}/desktop.conf" "$HOME/.config/lxsession/Lubuntu/desktop.conf"`
-end
