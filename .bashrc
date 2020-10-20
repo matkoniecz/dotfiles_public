@@ -117,9 +117,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-DIR="/home/mateusz/Documents/install_moje/dotfiles_except_crontab_and_autostart"
-. "$DIR/my_addditions_to_bashrc.sh"
-. "$DIR/git_aliases.sh"
+. "$HOME/.config/my_addditions_to_bashrc.sh"
+. "$HOME/.config/git_aliases.sh"
 
 # enable git commands provided as git files
 export PATH="$DIR/git_commands_as_script_files:$PATH"

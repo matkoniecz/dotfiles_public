@@ -16,7 +16,12 @@ def link(target, link_location)
     `ln -s "#{target}" "#{link_location}"`
 end
 
+# link config files directly
 link("#{__dir__}/.bashrc", "$HOME/.bashrc")
 link("#{__dir__}/.gitignore_global", "$HOME/.gitignore_global")
 link("#{__dir__}/.gitconfig", "$HOME/.gitconfig")
 link("#{__dir__}/.gitattributes", "$HOME/.gitattributes")
+
+# setup links used by .bashrc
+link("#{__dir__}/my_addditions_to_bashrc.sh", "$HOME/.config/my_addditions_to_bashrc.sh")
+link("#{__dir__}/git_aliases.sh", "$HOME/.config/git_aliases.sh")
