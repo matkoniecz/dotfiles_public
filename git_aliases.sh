@@ -12,7 +12,7 @@ alias g='git'
 #     removes alias. prefix
 #
 # grep .
-#     drops empty lines (possible with very long cliased commands displayed in multiple lines)
+#     drops empty lines (possible with very long aliased commands displayed in multiple lines)
 #
 # sort
 #     to keep list order stable
