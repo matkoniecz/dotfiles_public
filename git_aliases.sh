@@ -24,7 +24,7 @@ alias g='git'
 # sed "s/\(.*\)/alias \1='git \1'/"
 #     expand to wanted format
 
-# not aliased, not covereed by generation
+# not aliased, not covered by generation
 alias tag='git tag'
 alias clone='git clone'
 alias remote='git remote'
@@ -34,7 +34,7 @@ alias merge='git merge'
 # not aliased by rather a separate commands - not covered
 alias nuke='git nuke'
 
-# exception, displaed from generating kept here for documentation
+# exception, removed from generating kept here for documentation and reminder
 #alias ls='git ls'
 #alias tree='git tree'
 #alias ps='git ps' conflicts with system ps
