@@ -386,3 +386,6 @@
 	# TODO HACK - should be softlinked
 	# from http://www.akikoskinen.info/image-diffs-with-git/
 	command = ~/Documents/install_moje/dotfiles_except_crontab_and_autostart/compare_images.sh
+[pull]
+	# https://stackoverflow.com/questions/62653114/how-to-deal-with-this-git-warning-pulling-without-specifying-how-to-reconcile
+	rebase = true
