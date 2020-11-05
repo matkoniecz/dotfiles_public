@@ -88,15 +88,15 @@
 	#lsf = "!git ls-files | grep -i"
 	#############
 	m = merge
-	mum = "!git fetch upstream; git checkout master; git merge upstream/master; git push" 
+	mum = "!git fetch upstream; git switch master; git merge upstream/master; git push" 
 	ma = merge --abort
 	#mc = merge --continue
 	#ms = merge --skip
 	#############
-	co = "!echo 'o is my alias for checkout command'"
-	o = checkout
-	om = checkout master
-	ob = checkout -b
+	co = "!echo 'o is my alias for switch (formerly part checkout) command'"
+	o = switch # formerly checkout
+	om = switch master
+	ob = switch -b
 	#############
 	ps = push
 	psf = push -f #-force
