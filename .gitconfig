@@ -97,6 +97,9 @@
 	o = switch # formerly checkout
 	om = switch master
 	ob = switch -b
+	# s is taken by status
+	w = switch # formerly checkout
+	wm = switch master
 	#############
 	ps = push
 	psf = push -f #-force
