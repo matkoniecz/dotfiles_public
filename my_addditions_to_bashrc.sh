@@ -51,3 +51,6 @@ alias d-youtube='youtube-dl -f mp4'
 alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
 
 alias p='python3'
+
+
+export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
