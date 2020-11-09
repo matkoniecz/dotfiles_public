@@ -2,6 +2,9 @@
 #. /home/mateusz/Documents/install_moje/config_bash/my_addditions_to_bashrc.sh
 #to ~/.bashrc
 
+
+alias search='find | grep -i'
+
 # http://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion
 source /usr/share/bash-completion/completions/git
 
