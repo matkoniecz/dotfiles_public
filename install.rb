@@ -45,7 +45,7 @@ if Gem.win_platform?
 	
 	# run following in powershell to get location of a profile...
 	# echo $profile
-	`mkdir "%HOMEPATH%"\Documents\WindowsPowerShell"`
+	`mkdir "%HOMEPATH%"\\Documents\\WindowsPowerShell"`
 	link_location = File.join("%HOMEPATH%", "Documents", "WindowsPowerShell" , "Microsoft.PowerShell_profile.ps1")
 	target = File.join(__dir__, "windows_power_shell_aliases.ps1")
 	link(target, link_location)
