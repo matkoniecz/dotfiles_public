@@ -26,6 +26,8 @@
 	rv = revert
 	#############
 	b = branch
+	ob = checkout -b
+	bo = checkout -b
 	ba = branch --all #option -a shows both local and remote branches
 	bd = branch -d
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
