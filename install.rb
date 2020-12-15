@@ -47,7 +47,7 @@ if Gem.win_platform?
 	# echo $profile
 	`mkdir "%HOMEPATH%"\\Documents\\WindowsPowerShell"`
 	link_location = File.join("%HOMEPATH%", "Documents", "WindowsPowerShell" , "Microsoft.PowerShell_profile.ps1")
-	target = File.join(__dir__, "windows_power_shell_aliases.ps1")
+	target = File.join(__dir__, "windows_power_shell_profile.ps1")
 	link(target, link_location)
 	
 	# note that something from following will be needed
