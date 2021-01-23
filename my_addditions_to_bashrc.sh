@@ -8,8 +8,12 @@ alias search='find | grep -i'
 # http://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion
 source /usr/share/bash-completion/completions/git
 
-# http://askubuntu.com/questions/62095/how-to-alias-git-to-g-so-that-bash-completion-rules-are-preserved
-complete -o default -o nospace -F _git g
+
+# was
+## http://askubuntu.com/questions/62095/how-to-alias-git-to-g-so-that-bash-completion-rules-are-preserved
+# complete -o default -o nospace -F _git g
+# switched to https://askubuntu.com/a/642778
+__git_complete g __git_main
 
 # shortcuts for rubocop
 alias ru='rubocop -DES'
