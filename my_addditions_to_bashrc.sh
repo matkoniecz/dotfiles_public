@@ -60,6 +60,7 @@ alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
 
 export PATH="/home/mateusz/.local/lib:$PATH"
 alias p='python3'
+alias pip='pip3' # pip2 is available
 
 
 export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
