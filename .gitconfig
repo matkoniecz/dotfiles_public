@@ -102,8 +102,8 @@
 	w = switch # formerly checkout
 	wm = switch master
 	#############
-	ps = push
-	psf = push -f #-force
+	ps = push --follow-tags
+	psf = push -f --follow-tags #-force
 	psu = push --set-upstream #-u
 	pso = push origin
 	#psao = push --all origin
