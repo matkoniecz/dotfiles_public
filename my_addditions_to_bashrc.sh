@@ -58,6 +58,10 @@ alias d-page='wget -E  -k -p'
 alias d-youtube='youtube-dl -f mp4'
 alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
 
+# for python 3.9 from deadsnakes
+export PATH="/home/mateusz/.local/lib/python3.9/site-packages:$PATH"
+export PATH="/home/mateusz/.local/lib/python3.9:$PATH"
+
 export PATH="/home/mateusz/.local/lib:$PATH"
 alias p='python3'
 alias pip='pip3' # pip2 is available
