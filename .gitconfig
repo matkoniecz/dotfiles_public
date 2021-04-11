@@ -96,7 +96,7 @@
 	#ms = merge --skip
 	#############
 	co = "!echo 'o is my alias for switch (formerly part checkout) command'"
-	o = switch # formerly checkout
+	o = checkout
 	om = switch master
 	# s is taken by status
 	w = switch # formerly checkout
