@@ -109,7 +109,7 @@
 	#psuom = push -u origin master
 	#############
 	pl = pull
-	#plo = pull origin
+	plo = pull origin
 	plu = pull upstream
 	#plom = pull origin master
 	#plpm = pull upstream master
