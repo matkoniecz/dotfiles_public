@@ -65,8 +65,6 @@
 	#############
 	#fp = format-patch
 	#############
-	#fk = fsck
-	#############
 	#g = grep -p
 	#############
 	i = "!git init; git commit --allow-empty -m \"empty initial commit\""
