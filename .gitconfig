@@ -81,8 +81,6 @@
 	lstd = log --oneline --decorate --graph
 	lg = "!gitk --all&"
 
-	#http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
-	tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'
 	#############
 	#ls = ls-files
 	#lsf = "!git ls-files | grep -i"
