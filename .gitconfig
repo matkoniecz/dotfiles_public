@@ -74,6 +74,8 @@
 	#############
 	#from https://coderwall.com/p/euwpig/a-better-git-log
 	# see [color "decorate"] section for configuration of (auto) parameter for position info
+	#
+	# https://stackoverflow.com/a/34467298/4130619 has more ideas
 	l  = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
 	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
