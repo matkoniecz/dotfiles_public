@@ -60,6 +60,7 @@ else
 	link("#{__dir__}/.gitignore_global", "$HOME/.gitignore_global")
 	link("#{__dir__}/.gitconfig", "$HOME/.gitconfig")
 	link("#{__dir__}/.gitattributes", "$HOME/.gitattributes")
+	link("#{__dir__}/vscodium_settings.json", "$HOME/.config/VSCodium/User/settings.json")
 
 	# setup links used by .bashrc
 	link("#{__dir__}/my_addditions_to_bashrc.sh", "$HOME/.config/my_addditions_to_bashrc.sh")

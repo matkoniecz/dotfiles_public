@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.largeFileOptimizations": false,
+    "editor.wordWrapColumn": 170,
+    "editor.wordWrap": "bounded",
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "json.schemas": [
+        {
+          "fileMatch": [
+            ".geojson"
+          ],
+          "url": "http://json.schemastore.org/geojson"
+        }
+      ],
+      "files.associations": {
+        "*.geojson": "json"
+      },
+      "window.zoomLevel": 2,
+      "files.autoSave": "afterDelay"
+}
