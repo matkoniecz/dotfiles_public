@@ -20,6 +20,7 @@
       "files.associations": {
         "*.geojson": "json"
       },
+      "json.schemas.comment": "once https://github.com/microsoft/vscode/pull/129330 lands and is released it should not be needed",
       "window.zoomLevel": 2,
       "files.autoSave": "afterDelay"
 }
