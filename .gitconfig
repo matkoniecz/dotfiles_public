@@ -321,6 +321,8 @@
 	prompt = false
 [push]
 	default = current
+[pull]
+	default = current
 [credential]
 	# helper = cache --timeout=360000 # stores data in plaintext, problematic password input for multiple repository hosts
 	# see https://askubuntu.com/a/959662/349903 for how it should be installed
