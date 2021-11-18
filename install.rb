@@ -62,6 +62,13 @@ else
 	link("#{__dir__}/.gitattributes", "$HOME/.gitattributes")
 	link("#{__dir__}/vscodium_settings.json", "$HOME/.config/VSCodium/User/settings.json")
 
+	# color schema handling
+	qterminal_config_folder = "#{Dir.home}/.config/qterminal.org"
+	qterminal_colour_scheme_config_folder = qterminal_config_folder + "/color-schemes"
+	raise "qterminal config folder does not exist" unless File.exists?(qterminal_config_folder)
+	Dir.mkdir(qterminal_colour_scheme_config_folder) unless File.exists?(qterminal_colour_scheme_config_folder)
+	link("#{__dir__}/MyTerminalColourScheme.colorscheme", qterminal_colour_scheme_config_folder + "/MyTerminalColourScheme.colorscheme")
+
 	# setup links used by .bashrc
 	link("#{__dir__}/my_addditions_to_bashrc.sh", "$HOME/.config/my_addditions_to_bashrc.sh")
 	link("#{__dir__}/git_aliases.sh", "$HOME/.config/git_aliases.sh")
