@@ -114,3 +114,16 @@ git-resolve-conflict() {
   rm ./tmp.ours
   rm ./tmp.theirs
 }
+
+# https://stackoverflow.com/a/179231/4130619
+# probably will NOT work if there are any newlines at the end of the directory name
+pushd . > /dev/null
+SCRIPT_PATH="${BASH_SOURCE[0]}";
+if ([ -h "${SCRIPT_PATH}" ]) then
+  while([ -h "${SCRIPT_PATH}" ]) do cd `dirname "$SCRIPT_PATH"`; SCRIPT_PATH=`readlink "${SCRIPT_PATH}"`; done
+fi
+cd `dirname ${SCRIPT_PATH}` > /dev/null
+SCRIPT_PATH=`pwd`;
+popd  > /dev/null
+
+export RIPGREP_CONFIG_PATH="$SCRIPT_PATH/rip_grep.conf"
