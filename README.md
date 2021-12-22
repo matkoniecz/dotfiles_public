@@ -5,6 +5,7 @@ sudo apt-get install -y ruby git python
 ```
 and then, after typing password and installing
 ```
+mv ~/.bashrc ~/.default_and_replaced_bashrc # prepare for replacement with prepared one
 cd ~/Desktop
 git clone https://github.com/matkoniecz/my_public_dotfiles.git
 cd my_public_dotfiles
