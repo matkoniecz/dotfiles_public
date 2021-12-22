@@ -1,7 +1,7 @@
 To apply config to a new computer and test whether it works:
 
 ```
-sudo apt-get install -y ruby git
+sudo apt-get install -y ruby git python
 ```
 and then, after typing password and installing
 ```
