@@ -69,6 +69,7 @@ else
 	end
 	terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
 	if system_version == "Ubuntu 18.04.6 LTS" # this one has lxterminal
+		print("NOTE: terminal colour scheme change on Ubuntu 18.04 is not yet working!")
 		terminal_config_folder = "#{Dir.home}/.config/lxterminal"
 	end
 	terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
