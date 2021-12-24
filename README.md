@@ -13,11 +13,11 @@ ruby install.rb
 exec bash
 g ll
 ```
-In VirtualBox install also what Guest Additions need
+In VirtualBox install also what Guest Additions need + SSH support.
 ```
 sudo apt-get install -y gcc make perl
+sudo apt install -y openssh-server
 ```
-
 
 Why `exec bash`? See [here](http://stackoverflow.com/questions/2518127/how-do-i-reload-bashrc-without-logging-out-and-back-in).
 
