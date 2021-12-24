@@ -63,11 +63,18 @@ else
 	link("#{__dir__}/vscodium_settings.json", "$HOME/.config/VSCodium/User/settings.json")
 
 	# color schema handling
-	qterminal_config_folder = "#{Dir.home}/.config/qterminal.org"
-	qterminal_colour_scheme_config_folder = qterminal_config_folder + "/color-schemes"
-	raise "qterminal config folder does not exist" unless File.exists?(qterminal_config_folder)
-	Dir.mkdir(qterminal_colour_scheme_config_folder) unless File.exists?(qterminal_colour_scheme_config_folder)
-	link("#{__dir__}/MyTerminalColourScheme.colorscheme", qterminal_colour_scheme_config_folder + "/MyTerminalColourScheme.colorscheme")
+	system_version = `lsb_release -d`.sub("Description:", "").strip()
+	if !(["Ubuntu 18.04.6 LTS", "Ubuntu 20.04.3 LTS"].include?(system_version))
+		puts("unknown system version <#{system_version}>")
+	end
+	terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
+	if system_version == "Ubuntu 18.04.6 LTS" # this one has lxterminal
+		terminal_config_folder = "#{Dir.home}/.config/lxterminal"
+	end
+	terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
+	raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exists?(terminal_config_folder)
+	Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exists?(terminal_colour_scheme_config_folder)
+	link("#{__dir__}/MyTerminalColourScheme.colorscheme", terminal_colour_scheme_config_folder + "/MyTerminalColourScheme.colorscheme")
 
 	# setup links used by .bashrc
 	link("#{__dir__}/my_addditions_to_bashrc.sh", "$HOME/.config/my_addditions_to_bashrc.sh")
