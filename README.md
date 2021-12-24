@@ -1,4 +1,4 @@
-To apply config to a new computer and test whether it works:
+To apply config to a new computer and test whether it works by runnning `g ll` (readable git log):
 
 ```
 sudo apt-get install -y ruby git python
