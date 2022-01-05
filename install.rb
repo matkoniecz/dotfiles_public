@@ -1,4 +1,5 @@
 def prepare_for_linking(filepath)
+	#puts("prepare_for_linking <", filepath, ">")
     if File.symlink?(filepath)
         File.delete(filepath)
         #puts "deleting symlink #{filepath}"
@@ -56,11 +57,25 @@ else
 	# Hopefully actually Linux
 
 	# link config files directly
-	link("#{__dir__}/.bashrc", "$HOME/.bashrc")
-	link("#{__dir__}/.gitignore_global", "$HOME/.gitignore_global")
-	link("#{__dir__}/.gitconfig", "$HOME/.gitconfig")
-	link("#{__dir__}/.gitattributes", "$HOME/.gitattributes")
-	link("#{__dir__}/vscodium_settings.json", "$HOME/.config/VSCodium/User/settings.json")
+	link_location = File.join(Dir.home, ".bashrc")
+	target = File.join(__dir__, ".bashrc")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".gitignore_global")
+	target = File.join(__dir__, ".gitignore_global")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".gitconfig")
+	target = File.join(__dir__, ".gitconfig")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".gitattributes")
+	target = File.join(__dir__, ".gitattributes")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".config/VSCodium/User/settings.json")
+	target = File.join(__dir__, "vscodium_settings.json")
+	link(target, link_location)
 
 	# color schema handling
 	system_version = `lsb_release -d`.sub("Description:", "").strip()
@@ -75,9 +90,17 @@ else
 	terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
 	raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exists?(terminal_config_folder)
 	Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exists?(terminal_colour_scheme_config_folder)
-	link("#{__dir__}/MyTerminalColourScheme.colorscheme", terminal_colour_scheme_config_folder + "/MyTerminalColourScheme.colorscheme")
+
+	link_location = File.join(terminal_colour_scheme_config_folder, "MyTerminalColourScheme.colorscheme")
+	target = File.join(__dir__, "MyTerminalColourScheme.colorscheme")
+	link(target, link_location)
 
 	# setup links used by .bashrc
-	link("#{__dir__}/my_addditions_to_bashrc.sh", "$HOME/.config/my_addditions_to_bashrc.sh")
-	link("#{__dir__}/git_aliases.sh", "$HOME/.config/git_aliases.sh")
+	link_location = File.join(Dir.home, ".config", "my_addditions_to_bashrc.sh")
+	target = File.join(__dir__, "my_addditions_to_bashrc.sh")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".config", "git_aliases.sh")
+	target = File.join(__dir__, "git_aliases.sh")
+	link(target, link_location)
 end
