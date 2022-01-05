@@ -1,0 +1,19 @@
+This software and associated documentation files (the "Software") is
+released under the CC0 Public Domain Dedication, version 1.0, as
+published by Creative Commons. To the extent possible under law, the
+author(s) have dedicated all copyright and related and neighboring
+rights to the Software to the public domain worldwide.
+
+The Software is distributed WITHOUT ANY WARRANTY.
+
+Note that many segments are as noted inspired or following configuration
+shared by others.
+
+For example:
+
+bl = "!r() { cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:bold yellow)%(refname:short)|%(color:dim white)%(subject)|%(color:dim white)%(authorname)%(color:reset)|%(color:dim green)%(committerdate:relative)' | sed \"s/m${cur}|/m* ${cur}|/\" | column -ts'|'; }; r"
+
+is assembled from answers in https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+
+It may or may not be qualifying for copyright. I am not a lawyer.
+Not that hiring lawyer is likely to help, copyright law is insane.
