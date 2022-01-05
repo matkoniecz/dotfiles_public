@@ -13,10 +13,12 @@ ruby install.rb
 exec bash
 g ll
 ```
-In VirtualBox install also what Guest Additions need + SSH support.
+In VirtualBox install also what Guest Additions need + SSH support. For Ubuntu replacing featherpad is necessary as it is useless as a code editor (tab/space, line numbers). Geany is not ideal but at least it works (see a [longer discussion in my full ansible setup](https://github.com/matkoniecz/recovery-with-ansible/blob/master/roles/code_editor_generic_for_everything/tasks/main.yml)).
 ```
 sudo apt-get install -y gcc make perl
 sudo apt install -y openssh-server
+sudo apt-get -y remove featherpad
+sudo apt-get -y install geany
 ```
 
 Why `exec bash`? See [here](http://stackoverflow.com/questions/2518127/how-do-i-reload-bashrc-without-logging-out-and-back-in).
