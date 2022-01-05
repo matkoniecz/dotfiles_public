@@ -69,15 +69,7 @@ alias pip='pip3' # pip2 is available
 
 export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
 
-# https://stackoverflow.com/a/179231/4130619
-# probably will NOT work if there are any newlines at the end of the directory name
-pushd . > /dev/null
-SCRIPT_PATH="${BASH_SOURCE[0]}";
-if ([ -h "${SCRIPT_PATH}" ]) then
-  while([ -h "${SCRIPT_PATH}" ]) do cd `dirname "$SCRIPT_PATH"`; SCRIPT_PATH=`readlink "${SCRIPT_PATH}"`; done
-fi
-cd `dirname ${SCRIPT_PATH}` > /dev/null
-SCRIPT_PATH=`pwd`;
-popd  > /dev/null
+# https://stackoverflow.com/a/6840978/4130619
+SCRIPT_PATH=`dirname "$(readlink -f "$BASH_SOURCE")"`
 
 export RIPGREP_CONFIG_PATH="$SCRIPT_PATH/rip_grep.conf"
