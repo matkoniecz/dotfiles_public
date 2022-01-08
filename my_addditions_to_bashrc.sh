@@ -2,6 +2,7 @@
 #. /home/mateusz/Documents/install_moje/config_bash/my_addditions_to_bashrc.sh
 #to ~/.bashrc
 
+alias pinta='flatpak run com.github.PintaProject.Pinta'
 
 alias search='find | grep -i'
 
