@@ -95,6 +95,11 @@ else
 	target = File.join(__dir__, "MyTerminalColourScheme.colorscheme")
 	link(target, link_location)
 
+	# setup links used by git config
+	link_location = File.join(Dir.home, ".config", "compare_images.sh")
+	target = File.join(__dir__, "compare_images.sh")
+	link(target, link_location)
+	
 	# setup links used by .bashrc
 	link_location = File.join(Dir.home, ".config", "my_addditions_to_bashrc.sh")
 	target = File.join(__dir__, "my_addditions_to_bashrc.sh")
