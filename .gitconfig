@@ -282,7 +282,7 @@
 	frag = magenta bold
 	old = red bold
 	new = green bold
-	whitespace = red reverse
+	#whitespace = red reverse # an useless distraction
 
 # color.interactive.<slot>
 #     Use customized color for git add --interactive output.  <slot> may be prompt, header, help or
@@ -335,6 +335,12 @@
 
 
 # core.whitespace
+#
+#     this will cause git to emit complaints like
+#	  warning: 1 line adds whitespace errors
+#     I kept it enable for long but disabled as this errors are harmless,
+#     distracting, nearly noone cares about them and are trivial to
+#     automatically remove if anyone cares about them
 # 
 #     A comma separated list of common whitespace problems to notice. git
 #     diff will use color.diff.whitespace to highlight them, and git
@@ -370,7 +376,8 @@
 #         this is relevant for indent-with-non-tab and when Git fixes
 #         tab-in-indent errors. The default tab width is 8. Allowed
 #         values are 1 to 63.
-	whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
+#	whitespace=blank-at-eol,space-before-tab,-indent-with-non-tab,-tab-in-indent,blank-at-eof
+#	
 	attributesfile = ~/.gitattributes
 [status]
 	showUntrackedFiles = all # from https://medium.com/@porteneuve/30-git-cli-options-you-should-know-about-15423e8771df#.84vinznge
