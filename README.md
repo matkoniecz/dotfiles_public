@@ -20,7 +20,8 @@ sudo apt install -y openssh-server
 sudo apt-get -y remove featherpad
 sudo apt-get -y install geany
 sudo apt-get -y remove firefox
-sudo rm /etc/xdg/autostart/upg-notifier-autostart.desktop # gets rid of demoni "Upgrade Notifier" popup
+sudo rm /etc/xdg/autostart/upg-notifier-autostart.desktop # gets rid of demonic "Upgrade Notifier" popup
+echo "mode:           off" > ~/.xscreensaver
 ```
 
 Why `exec bash`? See [here](http://stackoverflow.com/questions/2518127/how-do-i-reload-bashrc-without-logging-out-and-back-in).
