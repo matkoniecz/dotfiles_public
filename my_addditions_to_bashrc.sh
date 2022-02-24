@@ -74,3 +74,11 @@ export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
 SCRIPT_PATH=`dirname "$(readlink -f "$BASH_SOURCE")"`
 
 export RIPGREP_CONFIG_PATH="$SCRIPT_PATH/rip_grep.conf"
+
+rgopen() {
+    #do things with parameters like $1 such as
+    echo "$@"
+    echo $(rg -l "$@")
+    codium $(rg -l "$@")
+}
+alias rgo='rgopen'
