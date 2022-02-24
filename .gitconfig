@@ -148,6 +148,7 @@
 	s = status --short --branch
 	s-explanation = status shown in short form but still lists branch
 
+	edited = "!codium $(git ls-files -o -m --exclude-standard)"
 	#from https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-get-a-list-of-conflicted-files
 	war = diff --name-only --diff-filter=U
 	conflict = diff --name-only --diff-filter=U
