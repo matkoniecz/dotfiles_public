@@ -29,7 +29,7 @@
 	ob = checkout -b
 	bo = checkout -b
 	ba = branch --all #option -a shows both local and remote branches
-	bd = branch -d
+	bd = branch -d # delete branch
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
 	
 	# Remove branches that have already been merged with master
