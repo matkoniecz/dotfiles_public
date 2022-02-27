@@ -4,6 +4,7 @@
 # standard file names used by Google APIs
 credentials.json
 token.json
+secret.json
 
 .byebug_history
 
