@@ -40,6 +40,13 @@ alias nuke='git nuke'
 #alias ps='git ps' conflicts with system ps
 
 #generated aliases
+alias def='git def'
+alias defence='git defence'
+alias defe='git defe'
+alias defen='git defen'
+alias defend='git defend'
+alias edit='git edit'
+alias edits='git edits'
 alias edited='git edited'
 alias a='git a'
 alias aa='git aa'
