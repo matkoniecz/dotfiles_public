@@ -140,6 +140,7 @@
 	rr = remote rm
 	rp = remote prune
 	rl = remote --verbose #list remotes with their urls
+	remotes = remote --verbose #list remotes with their urls
 	rao = remote add origin
 	rs = remote show
 	so = remote show origin
