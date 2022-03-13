@@ -82,3 +82,7 @@ rgopen() {
     codium $(rg -l "$@")
 }
 alias rgo='rgopen'
+
+# https://stackoverflow.com/questions/46288847/how-to-suppress-pip-upgrade-warning
+# stop pip from pointless unwanted distracting spammy begging
+export PIP_DISABLE_PIP_VERSION_CHECK=1
