@@ -76,9 +76,9 @@
 	# see [color "decorate"] section for configuration of (auto) parameter for position info
 	#
 	# https://stackoverflow.com/a/34467298/4130619 has more ideas
-	l  = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all -n 10
-	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --decorate --all
-	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%an' --abbrev-commit --date=relative --decorate --all
+	l = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#3b3b3b)%an'" --abbrev-commit --date=relative --decorate --all -n 10
+	ll = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#3b3b3b)%an'" --abbrev-commit --date=relative --decorate --all -n 10
+	lf = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
 	lg = "!gitk --all&"
