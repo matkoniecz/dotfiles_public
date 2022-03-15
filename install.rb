@@ -107,6 +107,10 @@ else
 	target = File.join(__dir__, "my_addditions_to_bashrc.sh")
 	link(target, link_location)
 
+	link_location = File.join(Dir.home, ".config", "ripgrep_open_files.py")
+	target = File.join(__dir__, "ripgrep_open_files.py")
+	link(target, link_location)
+
 	link_location = File.join(Dir.home, ".config", "git_aliases.sh")
 	target = File.join(__dir__, "git_aliases.sh")
 	link(target, link_location)

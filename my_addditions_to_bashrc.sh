@@ -75,13 +75,8 @@ SCRIPT_PATH=`dirname "$(readlink -f "$BASH_SOURCE")"`
 
 export RIPGREP_CONFIG_PATH="$SCRIPT_PATH/rip_grep.conf"
 
-rgopen() {
-    #do things with parameters like $1 such as
-    echo "$@"
-    echo $(rg -l "$@")
-    codium $(rg -l "$@")
-}
-alias rgo='rgopen'
+alias rgo='python3 ~/.config/ripgrep_open_files.py'
+alias rgopen='python3 ~/.config/ripgrep_open_files.py'
 
 # https://stackoverflow.com/questions/46288847/how-to-suppress-pip-upgrade-warning
 # stop pip from pointless unwanted distracting spammy begging
