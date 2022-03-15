@@ -79,21 +79,23 @@ else
 
 	# color schema handling
 	system_version = `lsb_release -d`.sub("Description:", "").strip()
-	if !(["Ubuntu 18.04.6 LTS", "Ubuntu 20.04.3 LTS"].include?(system_version))
-		puts("unknown system version <#{system_version}>")
-	end
-	terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
-	if system_version == "Ubuntu 18.04.6 LTS" # this one has lxterminal
+	terminal_config_folder = nil
+	if ["Ubuntu 20.04.3 LTS", "Ubuntu 20.04.4 LTS"].include?(system_version)
+		terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
+	elsif system_version == "Ubuntu 18.04.6 LTS" # this one has lxterminal
 		print("NOTE: terminal colour scheme change on Ubuntu 18.04 is not yet working!")
 		terminal_config_folder = "#{Dir.home}/.config/lxterminal"
+	else
+		puts("unknown system version <#{system_version}>")
 	end
-	terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
-	raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exists?(terminal_config_folder)
-	Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exists?(terminal_colour_scheme_config_folder)
-
-	link_location = File.join(terminal_colour_scheme_config_folder, "MyTerminalColourScheme.colorscheme")
-	target = File.join(__dir__, "MyTerminalColourScheme.colorscheme")
-	link(target, link_location)
+	if terminal_config_folder != nil
+		terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
+		raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exists?(terminal_config_folder)
+		Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exists?(terminal_colour_scheme_config_folder)
+		link_location = File.join(terminal_colour_scheme_config_folder, "MyTerminalColourScheme.colorscheme")
+		target = File.join(__dir__, "MyTerminalColourScheme.colorscheme")
+		link(target, link_location)
+	end
 
 	# setup links used by git config
 	link_location = File.join(Dir.home, ".config", "compare_images.sh")
