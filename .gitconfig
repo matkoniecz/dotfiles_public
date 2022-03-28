@@ -43,6 +43,7 @@
 	bl2 = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 	bl = "!r() { cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:bold yellow)%(refname:short)|%(color:dim white)%(subject)|%(color:dim white)%(authorname)%(color:reset)|%(color:dim green)%(committerdate:relative)' | sed \"s/m${cur}|/m* ${cur}|/\" | column -ts'|'; }; r"
+	lb = bl
 	#############
 	c = commit -m
 	#cal = commit --all -m #Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
