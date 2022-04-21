@@ -81,6 +81,7 @@
 	l = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#3b3b3b)%an'" --abbrev-commit --date=relative --decorate --all -n 10
 	ll = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#3b3b3b)%an'" --abbrev-commit --date=relative --decorate --all -n 30
 	lf = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all
+	llf = lf
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
 	lg = "!gitk --all&"
