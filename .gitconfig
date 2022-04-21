@@ -31,7 +31,8 @@
 	ba = branch --all #option -a shows both local and remote branches
 	bd = branch -d # delete branch
 	br = branch -r #Option -r causes the remote-tracking branches to be listed
-	
+	nuke = "!git branch -d ${1} && git push origin --delete ${1}"
+
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
 	# from https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig#
