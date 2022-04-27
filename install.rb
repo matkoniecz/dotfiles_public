@@ -73,6 +73,10 @@ else
 	target = File.join(__dir__, ".gitattributes")
 	link(target, link_location)
 
+	link_location = File.join(Dir.home, ".xscreensaver")
+	target = File.join(__dir__, ".xscreensaver")
+	link(target, link_location)
+
 	link_location = File.join(Dir.home, ".config/VSCodium/User/settings.json")
 	target = File.join(__dir__, "vscodium_settings.json")
 	link(target, link_location)
