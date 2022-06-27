@@ -78,8 +78,12 @@ else
 	link(target, link_location)
 
 	link_location = File.join(Dir.home, ".config/VSCodium/User/settings.json")
-	target = File.join(__dir__, "vscodium_settings.json")
-	link(target, link_location)
+	if File.exists?(link_location)
+		target = File.join(__dir__, "vscodium_settings.json")
+		link(target, link_location)
+	else
+		puts("skipping setting up codium setting as apparently codium is not installed")
+	end
 
 	# color schema handling
 	system_version = `lsb_release -d`.sub("Description:", "").strip()
