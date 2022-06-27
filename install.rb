@@ -90,9 +90,9 @@ else
 	terminal_config_folder = nil
 	if ["Ubuntu 20.04.3 LTS", "Ubuntu 20.04.4 LTS"].include?(system_version)
 		terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
-	elsif system_version == "Ubuntu 18.04.6 LTS" # this one has lxterminal
-		print("NOTE: terminal colour scheme change on Ubuntu 18.04 is not yet working!")
-		terminal_config_folder = "#{Dir.home}/.config/lxterminal"
+	elsif system_version == "Ubuntu 18.04.6 LTS"
+		puts("unsupported system version (Lubuntu is EOL, Ubuntu 18.04 likely soon will be) <#{system_version}>")
+		#terminal_config_folder = "#{Dir.home}/.config/lxterminal"
 	else
 		puts("unknown system version <#{system_version}>")
 	end
