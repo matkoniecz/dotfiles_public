@@ -53,8 +53,8 @@ export PATH="/usr/lib/go-1.10/bin:$PATH" #needed by backports by gophers - https
 # download aliases
 
 alias d-page='wget -E  -k -p'
-alias d-youtube='youtube-dl -f mp4'
-alias d-music-from-youtube='youtube-dl --extract-audio --audio-format mp3'
+alias d-youtube='yt-dlp --merge-output-format mp4'
+alias d-music-from-youtube='yt-dlp --extract-audio --audio-format mp3'
 
 # for python 3.9 from deadsnakes
 export PATH="/home/mateusz/.local/lib/python3.9/site-packages:$PATH"
@@ -78,3 +78,5 @@ alias rgopen='python3 ~/.config/ripgrep_open_files.py'
 # https://stackoverflow.com/questions/46288847/how-to-suppress-pip-upgrade-warning
 # stop pip from pointless unwanted distracting spammy begging
 export PIP_DISABLE_PIP_VERSION_CHECK=1
+
+export PATH="/home/mateusz/Documents/install/yt-dlp_builds:$PATH"
