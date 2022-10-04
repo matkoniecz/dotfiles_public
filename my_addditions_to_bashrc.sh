@@ -45,9 +45,6 @@ export PATH="/opt/telegram/:$PATH"
 # sometimes /usr/local/bin/ is missing for some ridiculous reason
 export PATH="/usr/local/bin/:$PATH"
 
-# add my local packages
-export PYTHONPATH="/home/mateusz/Documents/install_moje/python_packages:$PYTHONPATH"
-
 # go specific path setups
 export GOPATH="/home/mateusz/Documents/install/gopath_target"
 export PATH="/home/mateusz/Documents/install/gopath_target/bin:$PATH"
