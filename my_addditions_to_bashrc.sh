@@ -50,6 +50,9 @@ export GOPATH="/home/mateusz/Documents/install/gopath_target"
 export PATH="/home/mateusz/Documents/install/gopath_target/bin:$PATH"
 export PATH="/usr/lib/go-1.10/bin:$PATH" #needed by backports by gophers - https://github.com/golang/go/wiki/Ubuntu
 
+# ~/Documents/install goes straight to PATH
+export PATH="/home/mateusz/Documents/install:$PATH"
+
 # download aliases
 
 alias d-page='wget -E  -k -p'
