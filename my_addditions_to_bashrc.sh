@@ -2,7 +2,9 @@
 #. /home/mateusz/Documents/install_moje/config_bash/my_addditions_to_bashrc.sh
 #to ~/.bashrc
 
-alias apt=apt-get # hides part of ads (yes, "sudo apt-get dist-upgrade" shows an ad for Canonical products)
+alias apt=apt-get # hides part of ads
+# yes, "sudo apt-get dist-upgrade" shows an ad for Canonical products
+# https://bugs.launchpad.net/ubuntu/+source/ubuntu-advantage-tools/+bug/1992026
 
 
 alias pinta='flatpak run com.github.PintaProject.Pinta'
