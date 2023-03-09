@@ -27,5 +27,6 @@
       "files.autoSave": "afterDelay",
       "editor.unicodeHighlight.allowedCharacters": {
         "️": true
-      }
+      },
+      "git.openRepositoryInParentFolders": "always"
 }
