@@ -68,9 +68,25 @@ alias d-music-from-youtube='yt-dlp --extract-audio --audio-format mp3'
 export PATH="/home/mateusz/.local/lib/python3.9/site-packages:$PATH"
 export PATH="/home/mateusz/.local/lib/python3.9:$PATH"
 
+# for python 3.10 from deadsnakes
+export PATH="/home/mateusz/.local/lib/python3.10/site-packages:$PATH"
+export PATH="/home/mateusz/.local/lib/python3.10:$PATH"
+
+# for upcoming python 3.11 from deadsnakes
+export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
+export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
+
+# for upcoming python 3.12 from deadsnakes
+export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
+export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
+
+# for upcoming python 3.13 from deadsnakes
+export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
+export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
+
 export PATH="/home/mateusz/.local/lib:$PATH"
-alias p='python3'
-alias pip='pip3' # pip2 is available
+alias p='python3' # note that it affects only interactive shells
+alias pip='pip3' # pip2 is available - note that it affects only interactive shells
 
 
 export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
