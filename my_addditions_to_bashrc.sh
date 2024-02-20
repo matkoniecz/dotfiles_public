@@ -85,9 +85,12 @@ export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
 export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
 
 export PATH="/home/mateusz/.local/lib:$PATH"
-alias p='python3' # note that it affects only interactive shells
-alias pip='pip3' # pip2 is available - note that it affects only interactive shells
+alias p='python3.10' # note that it affects only interactive shells
+alias pip='python3.10 -m pip' # pip2 is available - note that it affects only interactive shells
 
+# not sure what happened with pip for 3.10
+# but following works
+# python3.10 -m pip install urllib3
 
 export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
 
