@@ -68,7 +68,7 @@ programs:								      \
 				deco -root				    \n\
 				drift -root				    \n\
 -				fadeplot -root				    \n\
--				galaxy -root -cycles 1000 -ncolors 255	    \n\
+-				galaxy -root -cycles 2000 -ncolors 255	    \n\
 				goop -root				    \n\
 				grav -root				    \n\
 -				ifs -root				    \n\
