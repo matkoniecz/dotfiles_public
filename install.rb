@@ -77,8 +77,9 @@ else
 	target = File.join(__dir__, ".xscreensaver")
 	link(target, link_location)
 
-	link_location = File.join(Dir.home, ".config/VSCodium/User/settings.json")
-	if File.exists?(link_location)
+	codium_config_directory = File.join(Dir.home, ".config/VSCodium/User")
+	link_location = File.join(codium_config_directory, "settings.json")
+	if Dir.exist?(codium_config_directory)
 		target = File.join(__dir__, "vscodium_settings.json")
 		link(target, link_location)
 	else
