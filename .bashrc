@@ -118,6 +118,7 @@ if ! shopt -oq posix; then
 fi
 
 . "$HOME/.config/my_addditions_to_bashrc.sh"
+. "$HOME/.config/my_addditions_to_bashrc_private.sh" # not included in this public repository
 . "$HOME/.config/git_aliases.sh"
 
 # enable git commands provided as git files
