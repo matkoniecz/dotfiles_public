@@ -89,7 +89,7 @@ else
 	# color schema handling
 	system_version = `lsb_release -d`.sub("Description:", "").strip()
 	terminal_config_folder = nil
-	if ["Ubuntu 20.04.3 LTS", "Ubuntu 20.04.4 LTS"].include?(system_version)
+	if ["Ubuntu 20.04.3 LTS", "Ubuntu 20.04.4 LTS", "Ubuntu 20.04.6 LTS"].include?(system_version)
 		terminal_config_folder = "#{Dir.home}/.config/qterminal.org"
 	elsif system_version == "Ubuntu 18.04.6 LTS"
 		puts("unsupported system version (Lubuntu is EOL, Ubuntu 18.04 likely soon will be) <#{system_version}>")
