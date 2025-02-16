@@ -61,8 +61,8 @@ export PATH="/home/mateusz/Documents/install:$PATH"
 # download aliases
 
 alias d-page='wget -E  -k -p'
-alias d-youtube='yt-dlp --merge-output-format mp4'
-alias d-music-from-youtube='yt-dlp --extract-audio --audio-format mp3'
+alias d-youtube='yt-dlp --sponsorblock-remove sponsor --merge-output-format mp4'
+alias d-music-from-youtube='yt-dlp --sponsorblock-remove sponsor --extract-audio --audio-format mp3'
 
 # for python 3.9 from deadsnakes
 export PATH="/home/mateusz/.local/lib/python3.9/site-packages:$PATH"
