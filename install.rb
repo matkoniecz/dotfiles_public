@@ -5,7 +5,7 @@ def prepare_for_linking(filepath)
         #puts "deleting symlink #{filepath}"
         return
     end
-    if File.exists?(filepath) == false
+    if File.exist?(filepath) == false
         #puts "file not existing #{filepath}"
         return
     end
@@ -99,8 +99,8 @@ else
 	end
 	if terminal_config_folder != nil
 		terminal_colour_scheme_config_folder = terminal_config_folder + "/color-schemes"
-		raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exists?(terminal_config_folder)
-		Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exists?(terminal_colour_scheme_config_folder)
+		raise "terminal config folder does not exist <#{terminal_config_folder}>" unless File.exist?(terminal_config_folder)
+		Dir.mkdir(terminal_colour_scheme_config_folder) unless File.exist?(terminal_colour_scheme_config_folder)
 		link_location = File.join(terminal_colour_scheme_config_folder, "MyTerminalColourScheme.colorscheme")
 		target = File.join(__dir__, "MyTerminalColourScheme.colorscheme")
 		link(target, link_location)
