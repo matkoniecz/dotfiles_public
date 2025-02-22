@@ -123,4 +123,12 @@ else
 	link_location = File.join(Dir.home, ".config", "git_aliases.sh")
 	target = File.join(__dir__, "git_aliases.sh")
 	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".Rprofile")
+	target = File.join(__dir__, ".Rprofile")
+	link(target, link_location)
+
+	link_location = File.join(Dir.home, ".config", "gtk-3.0", "bookmarks")
+	target = File.join(__dir__, "file_browser_bookmarks")
+	link(target, link_location)
 end
