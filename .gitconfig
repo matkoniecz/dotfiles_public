@@ -106,7 +106,7 @@
 	o = checkout
 	# s is taken by status
 	#############
-	ps = push --follow-tags
+	ps = push --tags
 	psf = push -f --follow-tags #-force
 	psu = push --set-upstream #-u
 	pso = push origin
