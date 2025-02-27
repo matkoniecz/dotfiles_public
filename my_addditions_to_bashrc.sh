@@ -64,29 +64,7 @@ alias d-page='wget -E  -k -p'
 alias d-youtube='yt-dlp --sponsorblock-remove sponsor --merge-output-format mp4'
 alias d-music-from-youtube='yt-dlp --sponsorblock-remove sponsor --extract-audio --audio-format mp3'
 
-# for python 3.9 from deadsnakes
-export PATH="/home/mateusz/.local/lib/python3.9/site-packages:$PATH"
-export PATH="/home/mateusz/.local/lib/python3.9:$PATH"
-
-# for python 3.10 from deadsnakes
-export PATH="/home/mateusz/.local/lib/python3.10/site-packages:$PATH"
-export PATH="/home/mateusz/.local/lib/python3.10:$PATH"
-
-# for upcoming python 3.11 from deadsnakes
-export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
-export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
-
-# for upcoming python 3.12 from deadsnakes
-export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
-export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
-
-# for upcoming python 3.13 from deadsnakes
-export PATH="/home/mateusz/.local/lib/python3.11/site-packages:$PATH"
-export PATH="/home/mateusz/.local/lib/python3.11:$PATH"
-
 export PATH="/home/mateusz/.local/lib:$PATH"
-alias p='python3.10' # note that it affects only interactive shells
-alias pip='python3.10 -m pip' # pip2 is available - note that it affects only interactive shells
 
 # not sure what happened with pip for 3.10
 # but following works
