@@ -129,6 +129,5 @@ PATH="/home/mateusz/Install:$PATH"
 #PATH="/home/mateusz/.gem/ruby/2.6.0/bin:$PATH"
 PATH="/home/mateusz/.gem/ruby/2.7.0/bin:$PATH"
 PATH="/home/mateusz/.gem/ruby/2.8.0/bin:$PATH"
-export PATH=$(python -c 'import site; print(site.USER_BASE + "/bin")'):$PATH
 export PATH="$PATH:/opt/mssql-tools/bin"
 . "$HOME/.cargo/env"
