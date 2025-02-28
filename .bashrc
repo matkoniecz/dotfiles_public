@@ -126,4 +126,3 @@ export PATH="$DIR/git_commands_as_script_files:$PATH"
 
 PATH="/home/mateusz/Install:$PATH"
 export PATH="$PATH:/opt/mssql-tools/bin"
-. "$HOME/.cargo/env"
