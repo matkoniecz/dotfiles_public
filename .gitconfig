@@ -414,3 +414,5 @@
 	defaultBranch = master
 [advice]
 	skippedCherryPicks = false
+[branch]
+	sort = -committerdate
