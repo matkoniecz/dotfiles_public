@@ -107,7 +107,7 @@
 	# s is taken by status
 	#############
 	ps = push --follow-tags # `push --tags` is not actually pushing commits
-	psf = push -f --follow-tags #-force
+	psf = push --force-with-lease --follow-tags
 	psu = push --set-upstream #-u
 	pso = push origin
 	#psao = push --all origin
