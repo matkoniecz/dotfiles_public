@@ -2,6 +2,14 @@
 #. /home/mateusz/Documents/install_moje/config_bash/my_addditions_to_bashrc.sh
 #to ~/.bashrc
 
+. "$HOME/.config/my_addditions_to_bashrc_private.sh" # not included in this public repository
+. "$HOME/.config/git_aliases.sh"
+
+# enable git commands provided as git files
+export PATH="$DIR/git_commands_as_script_files:$PATH"
+
+PATH="/home/mateusz/Install:$PATH"
+
 alias apt=apt-get # hides part of ads
 # yes, "sudo apt-get dist-upgrade" shows an ad for Canonical products
 # https://bugs.launchpad.net/ubuntu/+source/ubuntu-advantage-tools/+bug/1992026
