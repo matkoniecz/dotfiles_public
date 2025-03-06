@@ -78,10 +78,14 @@ else
 	link(target, link_location)
 
 	codium_config_directory = File.join(Dir.home, ".config/VSCodium/User")
-	link_location = File.join(codium_config_directory, "settings.json")
+	main_config_link_location = File.join(codium_config_directory, "settings.json")
+	keybindings_link_location = File.join(codium_config_directory, "keybindings.json")
 	if Dir.exist?(codium_config_directory)
 		target = File.join(__dir__, "vscodium_settings.json")
-		link(target, link_location)
+		link(target, main_config_link_location)
+
+		target = File.join(__dir__, "vscodium_settings_for_keyboard_shortcuts.json")
+		link(target, keybindings_link_location)
 	else
 		puts("skipping setting up codium setting as apparently codium is not installed")
 	end
