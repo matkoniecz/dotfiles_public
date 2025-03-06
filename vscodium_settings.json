@@ -8,7 +8,7 @@
     "workbench.editor.empty.hint": "hidden",
     "update.showReleaseNotes": false,
     "update.mode": "none",
-    "updata.mode.comment": "I update it using packages, there is no need for popups. https://github.com/microsoft/vscode/issues/112041#issuecomment-740506061 https://stackoverflow.com/questions/69931334/how-can-i-disable-there-is-an-available-update-popup-in-visual-studio-code-c",
+    "update.mode.comment": "I update it using packages, there is no need for popups. https://github.com/microsoft/vscode/issues/112041#issuecomment-740506061 https://stackoverflow.com/questions/69931334/how-can-i-disable-there-is-an-available-update-popup-in-visual-studio-code-c",
     "security.workspace.trust.untrustedFiles": "open",
     "json.schemas": [
         {
