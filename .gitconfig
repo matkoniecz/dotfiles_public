@@ -416,3 +416,8 @@
 	skippedCherryPicks = false
 [branch]
 	sort = -committerdate
+[include]
+	# whether this works can be verified with
+	# git config --list | grep maintenance
+	# as maintenance is defined there
+	path = .gitconfig_private_part
