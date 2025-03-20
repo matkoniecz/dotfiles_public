@@ -49,9 +49,6 @@ alias mv='mv -i'
 
 #source ~/.rvm/scripts/rvm #to get rvm functions - solution from http://stackoverflow.com/a/19954186/4130619
 
-# user install mode in pip puts binaries there
-export PATH="/home/mateusz/.local/bin/:$PATH"
-
 # make telegram command available
 export PATH="/opt/telegram/:$PATH"
 
@@ -73,10 +70,6 @@ alias d-youtube='yt-dlp --sponsorblock-remove sponsor --merge-output-format mp4'
 alias d-music-from-youtube='yt-dlp --sponsorblock-remove sponsor --extract-audio --audio-format mp3'
 
 export PATH="/home/mateusz/.local/lib:$PATH"
-
-# not sure what happened with pip for 3.10
-# but following works
-# python3.10 -m pip install urllib3
 
 export TDESKTOP_DISABLE_TRAY_COUNTER="GO_AWAY_STUPID_COUNTER"
 
