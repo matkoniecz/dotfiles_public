@@ -14,14 +14,7 @@ end
 
 def link(target, link_location)
     prepare_for_linking(link_location)
-	if Gem.win_platform?
-		# Windows
-		puts	"mklink  \"#{link_location}\" \"#{target}\""
-		`mklink  "#{link_location}" "#{target}"`
-	else
-		# Hopefully actually Linux
-		`ln -s "#{target}" "#{link_location}"`
-	end
+	`ln -s "#{target}" "#{link_location}"`
 end
 
 # https://stackoverflow.com/a/21468976
