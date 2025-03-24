@@ -87,4 +87,4 @@ export PIP_DISABLE_PIP_VERSION_CHECK=1
 
 export PATH="/home/mateusz/Documents/install/yt-dlp_builds:$PATH"
 
-export ANDROID_HOME="/home/mateusz/Android/Sdk" # used by gardle CLI
+export ANDROID_HOME="/home/mateusz/Android/Sdk" # used by gradle CLI
