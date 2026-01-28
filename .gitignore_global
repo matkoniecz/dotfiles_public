@@ -14,6 +14,12 @@ secret.json
 # temporary files created by osmfilter as it works
 osmfilter_tempfile.*
 
+# lychee dead link detector cache
+.lycheecache
+
+# traces of experiments with LLM
+.claude/
+
 # below is a standard gitignore file covering wide range of technologies
 # and workarounds for editors leaving unwanted debris 
 # lib/ was removed as false positive for Ruby gems (was from Python group)
