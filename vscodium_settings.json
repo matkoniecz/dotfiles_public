@@ -18,6 +18,9 @@
           "url": "http://json.schemastore.org/geojson"
         }
       ],
+      "workbench.editorAssociations": {
+        "*.svg": "default"
+      },
       "files.associations": {
         "*.geojson": "json"
       },
