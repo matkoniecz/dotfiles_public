@@ -90,9 +90,9 @@
 	#
 	# https://stackoverflow.com/a/34467298/4130619 has more ideas
 	l = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all -n 20
-	ll = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all -n 50
-	lll = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all
-	llf = lll
+	ll = log --graph --pretty=format:"'%Cred%h%Creset -%C(auto)%d%C(#cccccc) %s %Cgreen(%cr)%Creset %C(#6b6b6b)%an'" --abbrev-commit --date=relative --decorate --all
+	lll = ll
+	llf = ll
 	lf = lll
 	ls = log --oneline
 	lstd = log --oneline --decorate --graph
